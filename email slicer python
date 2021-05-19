@@ -1,0 +1,17 @@
+#we will take input from the user
+
+#strip function will remove the extra spaces
+
+email=input("Enter your email address").strip()
+
+#we will slice the username and domain name
+
+user_name=email[0:email.index("@")]
+
+domain_name=email[email.index("@")+1:]
+
+#To print the final output we will use formatting.
+
+output="Your username is'{}'and your domain name is '{}".format(user_name,domain_name)
+#Display output message
+print(output)
